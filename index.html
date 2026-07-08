@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Stories</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stories.css">
+
+</head>
+
+<body>
+
+<main class="page">
+
+    <!-- Barra Superior -->
+
+    <section class="offer-bar">
+
+        <div id="offerMessage">
+
+            Garantia de Resultado ou Seu Dinheiro de Volta ✅
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Stories -->
+
+    <section class="stories-title">
+
+        <div class="stories-title-left">
+
+            <h2>Histórias Reais</h2>
+
+            <p>
+
+                Mais de 15.000 mulheres já transformaram seus corpos com nosso método.
+
+            </p>
+
+        </div>
+
+        <div class="live-badge">
+
+            🔴 Ao Vivo <span id="liveCount">42</span>
+
+        </div>
+
+    </section>
+
+
+    <section class="stories-section">
+
+        <div
+            id="storiesList"
+            class="stories-list"
+        ></div>
+
+    </section>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-top">
+
+            <div class="hero-item">
+
+                👥 +15.000 mulheres
+
+            </div>
+
+            <div class="hero-item">
+
+                ⭐ 4,9/5 avaliações
+
+            </div>
+
+            <div class="hero-item">
+
+                🩺 Nutricionistas
+
+            </div>
+
+            <div class="hero-item">
+
+                🥗 Plano alimentar
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pill">
+
+            Para mulheres cansadas de tentar emagrecer e voltar a ganhar peso.
+
+        </div>
+
+
+        <h1 class="hero-title">
+
+            Perca até
+            <span>5 kg</span>
+
+            e reduza até
+
+            <span>12 cm</span>
+
+            de cintura
+
+            <br>
+
+            em apenas
+
+            <span>21 dias</span>
+
+        </h1>
+
+
+        <p class="hero-subtitle">
+
+            Comece a perceber resultados já nos primeiros dias.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- OFERTA -->
+
+    <section class="oferta">
+
+        <div class="oferta-card">
+
+            <div class="oferta-topo">
+
+                DESAFIO 21 DIAS PARA EMAGRECER COM SAÚDE
+
+            </div>
+
+
+            <div class="oferta-conteudo">
+
+                <div class="oferta-modelo">
+
+                    <img
+                        src="assets/oferta/modelo.webp"
+                        alt="Especialista"
+                    >
+
+                </div>
+
+
+                <div class="oferta-info">
+
+                    <h2>
+
+                        Transformação Garantida com:
+
+                    </h2>
+
+                    <ul class="lista-verde">
+
+                        <li>✅ Plano alimentar personalizado</li>
+
+                        <li>✅ Receitas rápidas e práticas</li>
+
+                        <li>✅ Suporte diário</li>
+
+                        <li>✅ Emagrecimento saudável</li>
+
+                        <li>✅ Redução de medidas</li>
+
+                        <li>✅ Método validado por especialistas</li>
+
+                    </ul>
+
+                    <ul class="lista-vermelha">
+
+                        <li>❌ Sem academia obrigatória</li>
+
+                        <li>❌ Sem passar fome</li>
+
+                        <li>❌ Sem remédios</li>
+
+                        <li>❌ Sem efeito sanfona</li>
+
+                    </ul>
+
+                    <div class="preco-box">
+
+                        <div class="preco-antigo">
+
+                            De R$ 197,00
+
+                        </div>
+
+                        <div class="preco-atual">
+
+                            R$ 29,99
+
+                        </div>
+
+                        <div class="flash-sale">
+
+                            OFERTA RELÂMPAGO
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="oferta-rodape">
+
+                Acesso imediato • Garantia de 7 dias
+
+            </div>
+
+        </div>
+
+
+        <div class="galeria">
+
+            <div class="miniatura">
+
+                <img
+                    src="assets/oferta/antes-depois.webp"
+                    alt=""
+                >
+
+                <span>Antes e Depois</span>
+
+            </div>
+
+            <div class="miniatura">
+
+                <img
+                    src="assets/oferta/receitas.webp"
+                    alt=""
+                >
+
+                <span>Receitas</span>
+
+            </div>
+
+            <div class="miniatura">
+
+                <img
+                    src="assets/oferta/plano.webp"
+                    alt=""
+                >
+
+                <span>Plano Alimentar</span>
+
+            </div>
+
+            <div class="miniatura">
+
+                <img
+                    src="assets/oferta/resultados.webp"
+                    alt=""
+                >
+
+                <span>Resultados</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </main>
+
+
+
+<div
+    id="storiesViewer"
+    class="stories-viewer"
+    aria-hidden="true"
+>
+
+    <div class="stories-overlay"></div>
+
+    <div class="stories-container">
+
+        <div
+            id="storiesProgress"
+            class="stories-progress"
+        ></div>
+
+        <div class="stories-header">
+
+            <div class="stories-user">
+
+                <img
+                    id="storyAvatar"
+                    src=""
+                    alt=""
+                >
+
+                <div class="stories-user-info">
+
+                    <span id="storyName"></span>
+
+                </div>
+
+            </div>
+
+            <button
+                id="closeStories"
+                class="stories-close"
+                type="button"
+            >
+                ✕
+
+            </button>
+
+        </div>
+
+        <div
+            id="storiesMedia"
+            class="stories-media"
+        ></div>
+
+        <div
+            id="storyTouchLeft"
+            class="story-touch-left"
+        ></div>
+
+        <div
+            id="storyTouchRight"
+            class="story-touch-right"
+        ></div>
+
+    </div>
+
+</div>
+
+
+
+<script src="js/stories-data.js"></script>
+<script src="js/stories.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
