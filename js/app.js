@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     new Stories(STORIES_DATA);
 
+    new Reels(REELS_DATA);
+
     /* ==========================================
        BARRA SUPERIOR
     ========================================== */
