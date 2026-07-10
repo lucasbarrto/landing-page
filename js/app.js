@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let countdown = 7 * 60;
 
+    let currentMessage = 0;
+
     function formatTime(seconds){
 
         const min = Math.floor(seconds / 60);
@@ -21,21 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    function updateOffer(){
+    function getMessages(){
 
-        if(countdown > 0){
-
-            countdown--;
-
-        }
-
-        const messages = [
+        return [
 
             "✅ Garantia de Resultado ou Seu Dinheiro de Volta",
 
             `⏳ Esta oferta encerra em ${formatTime(countdown)}`
 
         ];
+
+    }
+
+    // Alterna a mensagem exibida na barra (com fade)
+    function rotateMessage(){
+
+        const messages = getMessages();
 
         offerMessage.style.opacity = 0;
 
@@ -47,21 +50,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
         },250);
 
-        currentMessage++;
+        currentMessage = (currentMessage + 1) % messages.length;
 
-        if(currentMessage >= messages.length){
+    }
 
-            currentMessage = 0;
+    // Cronômetro real: decrementa 1 segundo a cada 1 segundo
+    function tickCountdown(){
+
+        if(countdown > 0){
+
+            countdown--;
+
+        }
+
+        // Mantém o tempo atualizado quando a mensagem do cronômetro está visível
+        if(offerMessage.textContent.includes("encerra em")){
+
+            offerMessage.textContent = `⏳ Esta oferta encerra em ${formatTime(countdown)}`;
 
         }
 
     }
 
-    let currentMessage = 0;
+    rotateMessage();
 
-    updateOffer();
-
-    setInterval(updateOffer,5000);
+    setInterval(rotateMessage, 5000);
+    setInterval(tickCountdown, 1000);
 
 
     /* ==========================================
