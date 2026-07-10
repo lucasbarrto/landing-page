@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* ==========================================
+       LINK DE CHECKOUT
+       Troque a URL abaixo pelo seu link de pagamento.
+    ========================================== */
+
+    const CHECKOUT_URL = "https://SEU-LINK-DE-CHECKOUT-AQUI.com";
+
+    const checkoutLink = document.getElementById("checkoutLink");
+
+    if(checkoutLink){
+
+        checkoutLink.setAttribute("href", CHECKOUT_URL);
+
+    }
+
     new Stories(STORIES_DATA);
 
     /* ==========================================
