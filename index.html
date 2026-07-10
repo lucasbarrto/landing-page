@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stories.css">
+    <link rel="stylesheet" href="css/reels.css">
 
 </head>
 
@@ -292,6 +293,36 @@
 
     </section>
 
+
+
+    <!-- REELS -->
+
+    <section class="reels-title">
+
+        <div class="reels-title-left">
+
+            <h2>Depoimentos</h2>
+
+            <p>
+
+                Veja relatos reais em formato de vídeo, deslize para o próximo.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="reels-section">
+
+        <div
+            id="reelsList"
+            class="reels-list"
+        ></div>
+
+    </section>
+
     </main>
 
 
@@ -361,8 +392,46 @@
 
 
 
+<div
+    id="reelsComments"
+    class="reels-comments"
+    aria-hidden="true"
+>
+
+    <div class="reels-comments-overlay"></div>
+
+    <div class="reels-comments-sheet">
+
+        <div class="reels-comments-header">
+
+            Comentários
+
+            <button
+                id="closeReelsComments"
+                class="reels-comments-close"
+                type="button"
+            >
+                ✕
+
+            </button>
+
+        </div>
+
+        <div
+            id="reelsCommentsList"
+            class="reels-comments-list"
+        ></div>
+
+    </div>
+
+</div>
+
+
+
 <script src="js/stories-data.js"></script>
 <script src="js/stories.js"></script>
+<script src="js/reels-data.js"></script>
+<script src="js/reels.js"></script>
 <script src="js/app.js"></script>
 
 </body>
