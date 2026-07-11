@@ -1,0 +1,171 @@
+/* ===================================================
+   GARANTIA E SUPORTE
+=================================================== */
+
+.trust-section{
+    padding:30px 16px 26px;
+    background:linear-gradient(160deg,#161122,#0c0e1c);
+    text-align:center;
+}
+
+.trust-badge{
+    display:inline-block;
+    background:rgba(255,255,255,.08);
+    color:#c7c9d9;
+    font-size:11px;
+    font-weight:600;
+    padding:6px 14px;
+    border-radius:999px;
+}
+
+.trust-highlight{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-top:16px;
+}
+
+.trust-highlight-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:52px;
+    height:52px;
+    border:1px solid #ff9a5c;
+    border-radius:12px;
+    line-height:1.1;
+}
+
+.trust-highlight-number{
+    color:#ffb35c;
+    font-size:18px;
+    font-weight:800;
+}
+
+.trust-highlight-label{
+    color:#ffb35c;
+    font-size:8.5px;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+}
+
+.trust-highlight-text{
+    font-size:19px;
+    font-weight:800;
+    background:linear-gradient(90deg,#ff5fa2,#c77bff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.trust-subtitle{
+    max-width:340px;
+    margin:12px auto 0;
+    color:#9a9dbd;
+    font-size:12px;
+    line-height:1.5;
+}
+
+.trust-features{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:22px;
+    text-align:left;
+}
+
+.trust-feature{
+    border-radius:16px;
+    padding:16px;
+}
+
+.trust-feature-purple{
+    background:linear-gradient(150deg,rgba(124,58,237,.35),rgba(124,58,237,.1));
+    border:1px solid rgba(167,120,255,.25);
+}
+
+.trust-feature-blue{
+    background:linear-gradient(150deg,rgba(41,140,220,.3),rgba(41,140,220,.08));
+    border:1px solid rgba(90,180,240,.25);
+}
+
+.trust-feature-green{
+    background:linear-gradient(150deg,rgba(26,156,83,.3),rgba(26,156,83,.08));
+    border:1px solid rgba(70,200,140,.25);
+}
+
+.trust-feature-icon{
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.12);
+    border-radius:9px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.trust-feature h3{
+    color:#fff;
+    font-size:13px;
+    font-weight:800;
+    line-height:1.3;
+}
+
+.trust-feature p{
+    margin-top:5px;
+    color:#c2c4dc;
+    font-size:11.5px;
+    line-height:1.45;
+}
+
+.trust-join{
+    margin-top:20px;
+    color:#e0a3ff;
+    font-size:12px;
+    font-weight:600;
+}
+
+.trust-cta{
+    display:block;
+    max-width:340px;
+    margin:22px auto 0;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+    padding:14px 18px;
+    border-radius:999px;
+    transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.trust-cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(0,0,0,.35);
+}
+
+.trust-cta:active{
+    transform:translateY(0);
+}
+
+
+/* ===================================================
+   GARANTIA E SUPORTE - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .trust-features{
+        flex-direction:row;
+    }
+
+    .trust-feature{
+        flex:1;
+    }
+
+}

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const liveCount = document.getElementById("liveCount");
 
-    const priceCountdown = document.getElementById("priceCountdown");
+    const countdownDisplays = document.querySelectorAll(".js-countdown");
 
     let countdown = 7 * 60;
 
@@ -87,21 +87,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-        if(priceCountdown){
+        updateCountdownDisplays();
 
-            priceCountdown.textContent = formatTime(countdown);
+    }
 
-        }
+    function updateCountdownDisplays(){
+
+        countdownDisplays.forEach((el) => {
+
+            el.textContent = formatTime(countdown);
+
+        });
 
     }
 
     rotateMessage();
-
-    if(priceCountdown){
-
-        priceCountdown.textContent = formatTime(countdown);
-
-    }
+    updateCountdownDisplays();
 
     setInterval(rotateMessage, 5000);
     setInterval(tickCountdown, 1000);
