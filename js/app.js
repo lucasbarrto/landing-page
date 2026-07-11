@@ -7,13 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const CHECKOUT_URL = "https://SEU-LINK-DE-CHECKOUT-AQUI.com";
 
-    const checkoutLink = document.getElementById("checkoutLink");
+    document.querySelectorAll(".js-checkout-link").forEach((link) => {
 
-    if(checkoutLink){
+        link.setAttribute("href", CHECKOUT_URL);
 
-        checkoutLink.setAttribute("href", CHECKOUT_URL);
-
-    }
+    });
 
     new Stories(STORIES_DATA);
 
@@ -26,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const offerMessage = document.getElementById("offerMessage");
 
     const liveCount = document.getElementById("liveCount");
+
+    const priceCountdown = document.getElementById("priceCountdown");
 
     let countdown = 7 * 60;
 
@@ -87,9 +87,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
+        if(priceCountdown){
+
+            priceCountdown.textContent = formatTime(countdown);
+
+        }
+
     }
 
     rotateMessage();
+
+    if(priceCountdown){
+
+        priceCountdown.textContent = formatTime(countdown);
+
+    }
 
     setInterval(rotateMessage, 5000);
     setInterval(tickCountdown, 1000);
