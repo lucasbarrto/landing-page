@@ -1,0 +1,114 @@
+/* ===================================================
+   PERGUNTAS FREQUENTES
+=================================================== */
+
+.faq-section{
+    padding:30px 16px 34px;
+    background:#fff;
+    text-align:center;
+}
+
+.faq-title{
+    color:#e03a5f;
+    font-size:18px;
+    font-weight:800;
+    margin-bottom:16px;
+}
+
+.faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    text-align:left;
+}
+
+.faq-item{
+    border:1px solid #ececec;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.faq-question{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    width:100%;
+    padding:13px 14px;
+    text-align:left;
+    color:#2e5d96;
+    font-size:12.5px;
+    font-weight:700;
+}
+
+.faq-chevron{
+    flex:0 0 auto;
+    width:16px;
+    height:16px;
+    fill:none;
+    stroke:#2e5d96;
+    stroke-width:2.4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    transition:transform .2s ease;
+}
+
+.faq-item.open .faq-chevron{
+    transform:rotate(180deg);
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+}
+
+.faq-item.open .faq-answer{
+    max-height:200px;
+}
+
+.faq-answer p{
+    padding:0 14px 14px;
+    color:#555;
+    font-size:12px;
+    line-height:1.5;
+}
+
+.faq-cta{
+    display:block;
+    max-width:340px;
+    margin:26px auto 0;
+    background:linear-gradient(135deg,#8b5cf6,#6228d7);
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    font-size:14px;
+    font-weight:800;
+    padding:15px 18px;
+    border-radius:14px;
+    box-shadow:0 10px 26px rgba(98,40,215,.3);
+    transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.faq-cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 32px rgba(98,40,215,.38);
+}
+
+.faq-cta:active{
+    transform:translateY(0);
+}
+
+.faq-cta-countdown{
+    margin-top:10px;
+    color:#e03a5f;
+    font-size:12px;
+    font-weight:700;
+}
+
+.faq-trust{
+    margin-top:8px;
+    color:#e03a5f;
+    font-size:11px;
+    font-weight:600;
+}
