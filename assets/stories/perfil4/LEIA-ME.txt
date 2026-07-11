@@ -1,0 +1,4 @@
+Coloque aqui os arquivos:
+thumb.jpg (avatar redondo que aparece na lista de stories)
+story1.jpg (primeiro story)
+story2.jpg (segundo story)
