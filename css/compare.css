@@ -1,0 +1,164 @@
+/* ===================================================
+   COMPARATIVO
+=================================================== */
+
+.compare-section{
+    padding:34px 16px 30px;
+    text-align:center;
+    background:#fff;
+}
+
+.compare-eyebrow{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+    color:#7c3aed;
+}
+
+.compare-title{
+    margin:10px auto 26px;
+    max-width:360px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:26px;
+    line-height:1.25;
+    font-weight:700;
+    color:#161616;
+}
+
+.compare-title span{
+    font-style:italic;
+    background:linear-gradient(
+        90deg,
+        #ff7f50,
+        #ff5fa2,
+        #8b5cf6
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.compare-headers{
+    display:flex;
+    justify-content:space-between;
+    padding:0 4px 10px;
+}
+
+.compare-header-bad,
+.compare-header-good{
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+}
+
+.compare-header-bad{
+    color:#9a9a9a;
+}
+
+.compare-header-good{
+    color:#7c3aed;
+}
+
+.compare-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.compare-row{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.compare-pill{
+    flex:1;
+    min-width:0;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:11px 12px;
+    border-radius:999px;
+    text-align:left;
+}
+
+.compare-pill span{
+    font-size:11.5px;
+    line-height:1.25;
+}
+
+.compare-pill-bad{
+    background:#fff;
+    border:1px solid #e4e4e4;
+    justify-content:space-between;
+}
+
+.compare-pill-bad span{
+    color:#9a9a9a;
+    text-decoration:line-through;
+}
+
+.compare-pill-bad .compare-icon{
+    color:#c4a3f0;
+    flex:0 0 auto;
+}
+
+.compare-pill-good{
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+    box-shadow:0 8px 20px rgba(124,58,237,.25);
+}
+
+.compare-pill-good span{
+    color:#fff;
+    font-weight:700;
+}
+
+.compare-pill-good .compare-icon{
+    color:#fff;
+    flex:0 0 auto;
+}
+
+.compare-icon{
+    width:14px;
+    height:14px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.compare-arrow{
+    flex:0 0 auto;
+    width:16px;
+    height:16px;
+    fill:none;
+    stroke:#8b5cf6;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+
+/* ===================================================
+   COMPARATIVO - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .compare-title{
+        font-size:32px;
+        max-width:440px;
+    }
+
+    .compare-pill span{
+        font-size:13px;
+    }
+
+}
