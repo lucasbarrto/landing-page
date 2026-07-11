@@ -1,0 +1,276 @@
+/* ===================================================
+   CARD DE PREÇO
+=================================================== */
+
+.pricing-section{
+    padding:34px 16px 40px;
+    background:radial-gradient(circle at top,#ffffff,#faf8ff);
+}
+
+.pricing-card-wrap{
+    max-width:400px;
+    margin:0 auto;
+    padding:3px;
+    border-radius:26px;
+    background:linear-gradient(135deg,#8b5cf6,#ff5fa2,#ff9142);
+}
+
+.pricing-card{
+    position:relative;
+    background:#fff;
+    border-radius:23px;
+    padding:28px 20px 24px;
+    text-align:center;
+}
+
+.pricing-badge-clients{
+    position:absolute;
+    top:-14px;
+    left:14px;
+    background:#7c3aed;
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    padding:6px 12px;
+    border-radius:999px;
+    box-shadow:0 6px 14px rgba(124,58,237,.35);
+}
+
+.pricing-rating{
+    position:absolute;
+    top:14px;
+    right:14px;
+    background:#fff8e6;
+    color:#8a6d00;
+    font-size:11px;
+    font-weight:700;
+    padding:5px 10px;
+    border-radius:999px;
+}
+
+.pricing-rating span{
+    font-weight:500;
+    color:#a08a3c;
+}
+
+.pricing-title{
+    margin-top:18px;
+    font-size:19px;
+    font-weight:800;
+    color:#161616;
+}
+
+.pricing-price{
+    margin-top:14px;
+    font-size:42px;
+    font-weight:900;
+    line-height:1;
+    background:linear-gradient(
+        90deg,
+        #ff7f50,
+        #ff5fa2,
+        #8b5cf6
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.pricing-price-sub{
+    margin-top:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    font-size:13px;
+}
+
+.pricing-price-old{
+    color:#a0a0a0;
+    text-decoration:line-through;
+}
+
+.pricing-price-save{
+    color:#1a9c53;
+    font-weight:700;
+}
+
+.pricing-off-badge{
+    display:inline-block;
+    margin-top:14px;
+    background:#7c3aed;
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    padding:7px 16px;
+    border-radius:999px;
+}
+
+.pricing-divider{
+    margin:22px 0;
+    border-top:1px solid #ececec;
+}
+
+.pricing-divider-dashed{
+    border-top:1px dashed #e2c6d4;
+}
+
+.pricing-included-label{
+    text-align:left;
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+    color:#9a9a9a;
+    margin-bottom:12px;
+}
+
+.pricing-checklist{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:11px;
+    text-align:left;
+}
+
+.pricing-checklist li{
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+}
+
+.pricing-checklist span{
+    font-size:13px;
+    line-height:1.4;
+    color:#333;
+}
+
+.pricing-checklist strong{
+    color:#111;
+}
+
+.pricing-check{
+    flex:0 0 auto;
+    width:16px;
+    height:16px;
+    margin-top:2px;
+    fill:none;
+    stroke:#1a9c53;
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.pricing-bonus-label{
+    text-align:left;
+    font-size:12px;
+    font-weight:700;
+    color:#e03a5f;
+    margin-bottom:12px;
+}
+
+.pricing-bonus-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    text-align:left;
+}
+
+.pricing-bonus-item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.pricing-bonus-icon{
+    flex:0 0 auto;
+    width:30px;
+    height:30px;
+    border-radius:9px;
+    background:#fdeae9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+}
+
+.pricing-bonus-item span:last-child{
+    font-size:13px;
+    line-height:1.4;
+    color:#333;
+}
+
+.pricing-bonus-item strong{
+    color:#111;
+}
+
+.pricing-countdown{
+    margin-top:20px;
+    font-size:12px;
+    font-weight:700;
+    color:#e03a5f;
+}
+
+.pricing-cta{
+    display:block;
+    margin-top:12px;
+    background:linear-gradient(135deg,#8b5cf6,#6228d7);
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:800;
+    padding:15px;
+    border-radius:14px;
+    box-shadow:0 10px 26px rgba(98,40,215,.3);
+    transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.pricing-cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 32px rgba(98,40,215,.38);
+}
+
+.pricing-cta:active{
+    transform:translateY(0);
+    box-shadow:0 8px 20px rgba(98,40,215,.3);
+}
+
+.pricing-slots{
+    margin-top:10px;
+    font-size:12px;
+    font-weight:700;
+    color:#e03a5f;
+}
+
+.pricing-trust{
+    margin-top:16px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.pricing-trust p{
+    font-size:11.5px;
+    color:#777;
+}
+
+.pricing-how{
+    margin-top:4px;
+    font-size:12px;
+    font-weight:700;
+    color:#7c3aed;
+    text-decoration:underline;
+}
+
+
+/* ===================================================
+   CARD DE PREÇO - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .pricing-card-wrap{
+        max-width:420px;
+    }
+
+}
