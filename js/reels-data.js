@@ -6,6 +6,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil1/video.mp4",
         poster: "assets/stories/perfil1/story1.jpg",
         likes: 1842,
+        reposts: 214,
         caption: "Perdi 6kg em 21 dias seguindo o plano 😱🔥 #transformacao #desafio21dias",
         comments: [
             { name: "julia.fit", avatar: "assets/stories/perfil2/thumb.jpg", text: "Gente que resultado incrível 😍" },
@@ -20,6 +21,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil2/video.mp4",
         poster: "assets/stories/perfil2/story1.jpg",
         likes: 2317,
+        reposts: 356,
         caption: "Nunca pensei que sem academia eu conseguiria esse resultado ✅ #metodovalidado",
         comments: [
             { name: "rafaela.oliveira", avatar: "assets/stories/perfil3/thumb.jpg", text: "Chorei aqui, que orgulho 🥹" },
@@ -33,6 +35,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil3/video.mp4",
         poster: "assets/stories/perfil3/story2.jpg",
         likes: 986,
+        reposts: 98,
         caption: "Antes e depois de 3 semanas 🍏 sem passar fome, sem remédio",
         comments: [
             { name: "ana.transformacao", avatar: "assets/stories/perfil1/thumb.jpg", text: "Arrasou demais 👏👏" },
@@ -47,6 +50,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil4/video.mp4",
         poster: "assets/stories/perfil1/story1.jpg",
         likes: 3021,
+        reposts: 487,
         caption: "-12cm de cintura sem academia obrigatória, olha essa diferença 🤯",
         comments: [
             { name: "paty.saude", avatar: "assets/stories/perfil3/thumb.jpg", text: "Isso é resultado de verdade" },
@@ -60,6 +64,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil5/video.mp4",
         poster: "assets/stories/perfil2/story1.jpg",
         likes: 1274,
+        reposts: 143,
         caption: "21 dias depois... nem eu acreditei no espelho 😭💕 #desafio21dias",
         comments: [
             { name: "ana.transformacao", avatar: "assets/stories/perfil1/thumb.jpg", text: "Que evolução linda 😍" },
@@ -73,6 +78,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil6/video.mp4",
         poster: "assets/stories/perfil3/story2.jpg",
         likes: 2689,
+        reposts: 301,
         caption: "Sem efeito sanfona dessa vez, finalmente encontrei o método certo ✅",
         comments: [
             { name: "camila.emagrece", avatar: "assets/stories/perfil2/thumb.jpg", text: "Isso sim é resultado consistente 👏" },
@@ -87,6 +93,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil7/video.mp4",
         poster: "assets/stories/perfil1/story1.jpg",
         likes: 954,
+        reposts: 76,
         caption: "Plano alimentar prático mesmo com rotina corrida, recomendo demais 🥗",
         comments: [
             { name: "marcia.resultados", avatar: "assets/stories/perfil1/thumb.jpg", text: "Adorei a dica das receitas rápidas" },
@@ -100,6 +107,7 @@ const REELS_DATA = [
         video: "assets/reels/perfil8/video.mp4",
         poster: "assets/stories/perfil2/story1.jpg",
         likes: 3452,
+        reposts: 512,
         caption: "Redução de medidas real, sem remédio e com suporte diário 🔥",
         comments: [
             { name: "juliana.novavida", avatar: "assets/stories/perfil2/thumb.jpg", text: "Simplesmente incrível, parabéns 👏" },
