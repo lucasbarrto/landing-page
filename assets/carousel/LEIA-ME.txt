@@ -1,0 +1,17 @@
+Coloque aqui as 14 fotos do carrossel horizontal, com estes nomes exatos:
+foto1.jpg
+foto2.jpg
+foto3.jpg
+foto4.jpg
+foto5.jpg
+foto6.jpg
+foto7.jpg
+foto8.jpg
+foto9.jpg
+foto10.jpg
+foto11.jpg
+foto12.jpg
+foto13.jpg
+foto14.jpg
+
+Se quiser mais ou menos fotos, me avise que eu ajusto o HTML/CSS pra quantidade nova.
