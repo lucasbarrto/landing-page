@@ -1,0 +1,4 @@
+Coloque aqui a imagem unica do carrossel (a tira horizontal com todas as fotos), com este nome exato:
+fotos.png
+
+A imagem e duplicada automaticamente via CSS pra criar o loop infinito, entao as duas pontas dela devem conectar bem (a ultima foto da direita seguida da primeira foto da esquerda de novo).

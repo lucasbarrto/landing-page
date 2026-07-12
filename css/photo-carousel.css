@@ -1,0 +1,61 @@
+/* ===================================================
+   CARROSSEL DE FOTOS - LOOP INFINITO
+=================================================== */
+
+.photo-carousel{
+    overflow:hidden;
+    background:#fff;
+}
+
+.photo-carousel-track{
+    display:flex;
+    width:max-content;
+    animation:photo-carousel-scroll 26s linear infinite;
+}
+
+.photo-carousel-track img{
+    flex:0 0 auto;
+    height:90px;
+    width:auto;
+    display:block;
+    -webkit-user-drag:none;
+    user-select:none;
+}
+
+.photo-carousel-track:hover{
+    animation-play-state:paused;
+}
+
+@keyframes photo-carousel-scroll{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    .photo-carousel-track{
+        animation:none;
+        overflow-x:auto;
+    }
+
+}
+
+
+/* ===================================================
+   CARROSSEL DE FOTOS - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .photo-carousel-track img{
+        height:120px;
+    }
+
+}
