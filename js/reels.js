@@ -35,11 +35,15 @@ class Reels {
         this.commentsPanel = document.getElementById("reelsComments");
         this.commentsList = document.getElementById("reelsCommentsList");
         this.closeCommentsButton = document.getElementById("closeReelsComments");
+        this.commentsForm = document.getElementById("reelsCommentsForm");
+        this.commentsInput = document.getElementById("reelsCommentsInput");
 
         this.render();
         this.bindItems();
         this.bindObserver();
         this.bindComments();
+        this.bindCommentForm();
+        this.bindScrollAutoClose();
 
     }
 
@@ -264,6 +268,70 @@ class Reels {
                 this.closeComments();
 
             });
+
+    }
+
+    bindCommentForm() {
+
+        this.commentsForm.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            const text = this.commentsInput.value.trim();
+
+            if (!text) return;
+
+            const item = document.createElement("div");
+            item.className = "reel-comment-item";
+
+            const avatar = document.createElement("div");
+            avatar.className = "reel-comment-avatar-you";
+            avatar.textContent = "Você";
+
+            const body = document.createElement("div");
+
+            const name = document.createElement("span");
+            name.className = "reel-comment-name";
+            name.textContent = "você";
+
+            const paragraph = document.createElement("p");
+            paragraph.textContent = text;
+
+            body.appendChild(name);
+            body.appendChild(paragraph);
+
+            item.appendChild(avatar);
+            item.appendChild(body);
+
+            this.commentsList.appendChild(item);
+            this.commentsInput.value = "";
+
+            item.scrollIntoView({ behavior: "smooth", block: "end" });
+
+        });
+
+    }
+
+    bindScrollAutoClose() {
+
+        const reelsSection = document.querySelector(".reels-section");
+
+        if (!reelsSection) return;
+
+        window.addEventListener("scroll", () => {
+
+            if (!this.commentsPanel.classList.contains("active")) return;
+
+            const rect = reelsSection.getBoundingClientRect();
+            const isVisible = rect.bottom > 0 && rect.top < window.innerHeight;
+
+            if (!isVisible) {
+
+                this.closeComments();
+
+            }
+
+        }, { passive: true });
 
     }
 
