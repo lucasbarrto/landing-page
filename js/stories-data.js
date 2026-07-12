@@ -1,7 +1,7 @@
 const STORIES_DATA = [
     {
         id: 1,
-        name: "Perfil 1",
+        name: "Joana Silva",
         avatar: "assets/stories/perfil1/thumb.jpg",
         items: [
             {
@@ -19,7 +19,7 @@ const STORIES_DATA = [
 
     {
         id: 2,
-        name: "Perfil 2",
+        name: "Wanessa Souza",
         avatar: "assets/stories/perfil2/thumb.jpg",
         items: [
             {
@@ -37,7 +37,7 @@ const STORIES_DATA = [
 
     {
         id: 3,
-        name: "Perfil 3",
+        name: "Edlla Camargo",
         avatar: "assets/stories/perfil3/thumb.jpg",
         items: [
             {
@@ -50,7 +50,7 @@ const STORIES_DATA = [
 
     {
         id: 4,
-        name: "Perfil 4",
+        name: "Irene Garofoni",
         avatar: "assets/stories/perfil4/thumb.jpg",
         items: [
             {
@@ -73,7 +73,7 @@ const STORIES_DATA = [
 
     {
         id: 5,
-        name: "Perfil 5",
+        name: "Julia Batista",
         avatar: "assets/stories/perfil5/thumb.jpg",
         items: [
             {
@@ -91,7 +91,7 @@ const STORIES_DATA = [
 
     {
         id: 6,
-        name: "Perfil 6",
+        name: "Paloma Queiroz",
         avatar: "assets/stories/perfil6/thumb.jpg",
         items: [
             {
@@ -109,7 +109,7 @@ const STORIES_DATA = [
 
     {
         id: 7,
-        name: "Perfil 7",
+        name: "Ana Clara Silva",
         avatar: "assets/stories/perfil7/thumb.jpg",
         items: [
             {
@@ -122,7 +122,7 @@ const STORIES_DATA = [
 
     {
         id: 8,
-        name: "Perfil 8",
+        name: "Carolina Ester",
         avatar: "assets/stories/perfil8/thumb.jpg",
         items: [
             {
