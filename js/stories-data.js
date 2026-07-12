@@ -62,6 +62,11 @@ const STORIES_DATA = [
                 type: "image",
                 src: "assets/stories/perfil4/story2.jpg",
                 duration: 5000
+            },
+            {
+                type: "image",
+                src: "assets/stories/perfil4/story3.jpg",
+                duration: 5000
             }
         ]
     },
