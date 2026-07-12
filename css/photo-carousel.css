@@ -4,23 +4,20 @@
 
 .photo-carousel{
     overflow:hidden;
-    padding:22px 0;
     background:#fff;
 }
 
 .photo-carousel-track{
     display:flex;
     width:max-content;
-    animation:photo-carousel-scroll 36s linear infinite;
+    animation:photo-carousel-scroll 26s linear infinite;
 }
 
 .photo-carousel-track img{
     flex:0 0 auto;
-    height:150px;
+    height:90px;
     width:auto;
-    border-radius:14px;
-    margin-right:12px;
-    object-fit:cover;
+    display:block;
     -webkit-user-drag:none;
     user-select:none;
 }
@@ -58,7 +55,7 @@
 @media(min-width:768px){
 
     .photo-carousel-track img{
-        height:190px;
+        height:120px;
     }
 
 }

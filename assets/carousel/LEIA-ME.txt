@@ -1,17 +1,4 @@
-Coloque aqui as 14 fotos do carrossel horizontal, com estes nomes exatos:
-foto1.jpg
-foto2.jpg
-foto3.jpg
-foto4.jpg
-foto5.jpg
-foto6.jpg
-foto7.jpg
-foto8.jpg
-foto9.jpg
-foto10.jpg
-foto11.jpg
-foto12.jpg
-foto13.jpg
-foto14.jpg
+Coloque aqui a imagem unica do carrossel (a tira horizontal com todas as fotos), com este nome exato:
+fotos.png
 
-Se quiser mais ou menos fotos, me avise que eu ajusto o HTML/CSS pra quantidade nova.
+A imagem e duplicada automaticamente via CSS pra criar o loop infinito, entao as duas pontas dela devem conectar bem (a ultima foto da direita seguida da primeira foto da esquerda de novo).
