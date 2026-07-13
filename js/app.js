@@ -2,14 +2,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* ==========================================
        LINK DE CHECKOUT
-       Troque a URL abaixo pelo seu link de pagamento.
+       Apenas o botão final do card de preço (#pricingCta) leva
+       para o checkout. Os demais botões apenas rolam a página
+       até ele.
     ========================================== */
 
     const CHECKOUT_URL = "https://pay.kiwify.com.br/IgzadMh";
 
-    document.querySelectorAll(".js-checkout-link").forEach((link) => {
+    const pricingCta = document.getElementById("pricingCta");
 
-        link.setAttribute("href", CHECKOUT_URL);
+    pricingCta.setAttribute("href", CHECKOUT_URL);
+
+    document.querySelectorAll(".js-scroll-to-checkout").forEach((link) => {
+
+        link.addEventListener("click", (event) => {
+
+            event.preventDefault();
+
+            pricingCta.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        });
 
     });
 
