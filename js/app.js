@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
        Troque a URL abaixo pelo seu link de pagamento.
     ========================================== */
 
-    const CHECKOUT_URL = "https://SEU-LINK-DE-CHECKOUT-AQUI.com";
+    const CHECKOUT_URL = "https://pay.kiwify.com.br/IgzadMh";
 
     document.querySelectorAll(".js-checkout-link").forEach((link) => {
 
