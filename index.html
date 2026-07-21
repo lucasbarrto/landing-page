@@ -56,6 +56,7 @@
     <link rel="stylesheet" href="css/learn.css">
     <link rel="stylesheet" href="css/problem.css">
     <link rel="stylesheet" href="css/closer.css">
+    <link rel="stylesheet" href="css/live-chat.css">
 
 </head>
 
@@ -1161,6 +1162,82 @@
 
 
 
+<div id="liveChatToast" class="live-chat-toast"></div>
+
+<button
+    id="liveChatButton"
+    class="live-chat-button"
+    type="button"
+    aria-label="Abrir bate-papo ao vivo"
+>
+    <svg class="live-chat-button-icon" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.03 2 11c0 2.42 1.09 4.63 2.88 6.28-.13 1.12-.5 3.15-1.24 4.24 0 0 2.61-.36 4.61-1.87A11.1 11.1 0 0 0 12 20c5.52 0 10-4.03 10-9S17.52 2 12 2z"/>
+    </svg>
+    <span id="liveChatBadge" class="live-chat-badge"></span>
+</button>
+
+<div
+    id="liveChatPanel"
+    class="live-chat-panel"
+    aria-hidden="true"
+>
+
+    <div class="live-chat-overlay"></div>
+
+    <div class="live-chat-sheet">
+
+        <div class="live-chat-header">
+
+            <span class="live-chat-header-live">🔴 Ao vivo</span>
+            Bate-papo da Comunidade
+
+            <button
+                id="closeLiveChat"
+                class="live-chat-close"
+                type="button"
+            >
+                ✕
+
+            </button>
+
+        </div>
+
+        <div
+            id="liveChatList"
+            class="live-chat-list"
+        ></div>
+
+        <form
+            id="liveChatForm"
+            class="live-chat-form"
+        >
+
+            <div class="live-chat-form-avatar">Você</div>
+
+            <input
+                id="liveChatInput"
+                class="live-chat-input"
+                type="text"
+                placeholder="Escreva uma mensagem..."
+                maxlength="140"
+                autocomplete="off"
+            >
+
+            <button
+                class="live-chat-send"
+                type="submit"
+            >
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
 <script src="js/stories-data.js"></script>
 <script src="js/stories.js"></script>
 <script src="js/reels-data.js"></script>
@@ -1168,6 +1245,8 @@
 <script src="js/benefits-tabs.js"></script>
 <script src="js/strategy-carousel.js"></script>
 <script src="js/faq.js"></script>
+<script src="js/live-chat-data.js"></script>
+<script src="js/live-chat.js"></script>
 <script src="js/app.js"></script>
 
 </body>

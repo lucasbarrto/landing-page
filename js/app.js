@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     new Reels(REELS_DATA);
 
+    new LiveChat(LIVE_CHAT_DATA);
+
     /* ==========================================
        BARRA SUPERIOR
     ========================================== */

@@ -1,0 +1,346 @@
+/* ===================================================
+   BOTÃO FLUTUANTE DE BATE-PAPO
+=================================================== */
+
+.live-chat-button{
+    position:fixed;
+    right:16px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8b5cf6,#c41e5e);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 26px rgba(140,20,110,.35);
+    z-index:500;
+    transition:transform .15s ease;
+}
+
+.live-chat-button:active{
+    transform:scale(.94);
+}
+
+.live-chat-button-icon{
+    width:26px;
+    height:26px;
+    fill:currentColor;
+}
+
+.live-chat-pulse{
+    animation:live-chat-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes live-chat-pulse{
+    0%,100%{ box-shadow:0 10px 26px rgba(140,20,110,.35); }
+    50%{ box-shadow:0 10px 26px rgba(140,20,110,.35), 0 0 0 8px rgba(196,30,94,.18); }
+}
+
+.live-chat-badge{
+    position:absolute;
+    top:-2px;
+    right:-2px;
+    min-width:20px;
+    height:20px;
+    padding:0 5px;
+    border-radius:999px;
+    background:#ff3b5c;
+    color:#fff;
+    font-size:11px;
+    font-weight:800;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    border:2px solid #fff;
+}
+
+.live-chat-badge.active{
+    display:flex;
+}
+
+.live-chat-toast{
+    position:fixed;
+    right:16px;
+    bottom:82px;
+    max-width:200px;
+    background:#fff;
+    color:#1a0b14;
+    font-size:12.5px;
+    font-weight:600;
+    line-height:1.35;
+    padding:10px 14px;
+    border-radius:14px 14px 4px 14px;
+    box-shadow:0 10px 24px rgba(0,0,0,.16);
+    opacity:0;
+    transform:translateY(6px);
+    pointer-events:none;
+    transition:opacity .25s ease, transform .25s ease;
+    z-index:500;
+}
+
+.live-chat-toast.active{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+    cursor:pointer;
+}
+
+
+/* ===================================================
+   PAINEL DE BATE-PAPO AO VIVO
+=================================================== */
+
+.live-chat-panel{
+    position:fixed;
+    inset:0;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .25s ease, visibility .25s ease;
+    z-index:9999;
+}
+
+.live-chat-panel.active{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+}
+
+.live-chat-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+
+.live-chat-sheet{
+    position:relative;
+    width:100%;
+    max-width:520px;
+    max-height:72vh;
+    background:#fdf2f6;
+    border-radius:18px 18px 0 0;
+    display:flex;
+    flex-direction:column;
+    transform:translateY(0);
+    transition:transform .25s ease;
+    overflow:hidden;
+}
+
+.live-chat-panel:not(.active) .live-chat-sheet{
+    transform:translateY(30px);
+}
+
+.live-chat-header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    position:relative;
+    padding:14px;
+    font-size:14px;
+    font-weight:700;
+    color:#1a0b14;
+    background:#fff;
+    border-bottom:1px solid #f0e0e8;
+}
+
+.live-chat-header-live{
+    font-size:11px;
+    font-weight:800;
+    color:#e5314f;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+}
+
+.live-chat-close{
+    position:absolute;
+    right:12px;
+    top:8px;
+    width:32px;
+    height:32px;
+    font-size:18px;
+    color:#666;
+}
+
+.live-chat-list{
+    flex:1;
+    min-height:0;
+    padding:14px;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.live-chat-load-more-wrap{
+    display:flex;
+    justify-content:center;
+    padding-bottom:4px;
+}
+
+.live-chat-load-more{
+    font-size:12px;
+    font-weight:700;
+    color:#8b5cf6;
+    background:#fff;
+    border:1px solid #e7d9f5;
+    padding:8px 16px;
+    border-radius:999px;
+}
+
+.live-chat-item{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+}
+
+.live-chat-item img{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    object-fit:cover;
+    flex:0 0 auto;
+}
+
+.live-chat-avatar-you{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    flex:0 0 auto;
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:8.5px;
+    font-weight:700;
+    text-align:center;
+}
+
+.live-chat-bubble{
+    background:#fff;
+    border-radius:14px;
+    padding:8px 12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    flex:1;
+    min-width:0;
+}
+
+.live-chat-item-you .live-chat-bubble{
+    background:#f3ecfd;
+}
+
+.live-chat-name{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:6px;
+    font-size:13px;
+    font-weight:700;
+    color:#1a0b14;
+    margin-bottom:2px;
+}
+
+.live-chat-tag{
+    font-size:9.5px;
+    font-weight:700;
+    padding:2px 7px;
+    border-radius:999px;
+    white-space:nowrap;
+}
+
+.live-chat-tag-comprou{
+    background:#e3f7ea;
+    color:#1a9c53;
+}
+
+.live-chat-tag-decidindo{
+    background:#fff3d9;
+    color:#a8660a;
+}
+
+.live-chat-item p{
+    font-size:13px;
+    color:#333;
+    line-height:1.4;
+}
+
+.live-chat-time{
+    display:block;
+    margin-top:4px;
+    font-size:10.5px;
+    color:#a89ba5;
+}
+
+
+/* ===================================================
+   FORMULÁRIO DE BATE-PAPO
+=================================================== */
+
+.live-chat-form{
+    flex:0 0 auto;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    background:#fff;
+    border-top:1px solid #f0e0e8;
+}
+
+.live-chat-form-avatar{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    flex:0 0 auto;
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:7.5px;
+    font-weight:700;
+}
+
+.live-chat-input{
+    flex:1;
+    min-width:0;
+    border:1px solid #ececec;
+    border-radius:999px;
+    padding:9px 14px;
+    font-size:13px;
+    color:#111;
+    outline:none;
+    transition:border-color .15s ease;
+}
+
+.live-chat-input:focus{
+    border-color:#8b5cf6;
+}
+
+.live-chat-send{
+    flex:0 0 auto;
+    background:linear-gradient(135deg,#8b5cf6,#6228d7);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    padding:9px 16px;
+    border-radius:999px;
+}
+
+
+/* ===================================================
+   BATE-PAPO - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .live-chat-sheet{
+        max-width:420px;
+    }
+
+}
