@@ -7,6 +7,21 @@
     background:#fff;
 }
 
+.photo-carousel-eyebrow{
+    display:table;
+    margin:18px auto 12px;
+    padding:8px 20px;
+    border-radius:999px;
+    background:linear-gradient(135deg,#fdeaf1,#f5eeff);
+    border:1px solid #f2d8e6;
+    text-align:center;
+    font-family:"Playfair Display",Georgia,serif;
+    font-style:italic;
+    font-weight:700;
+    font-size:14px;
+    color:#c41e5e;
+}
+
 .photo-carousel-track{
     display:flex;
     width:max-content;

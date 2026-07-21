@@ -7,11 +7,11 @@ const REELS_DATA = [
         poster: "assets/stories/perfil1/story1.jpg",
         likes: 1842,
         reposts: 214,
-        caption: "Perdi 6kg em 21 dias seguindo o plano 😱🔥 #transformacao #desafio21dias",
+        caption: "Perdi 6kg em 21 dias com o Jejum de Ester 🙏🔥 e voltei a orar todos os dias #jejumdeester #fe",
         comments: [
-            { name: "julia.mendes", avatar: "assets/comments/avatar-01.jpg", text: "Gente que resultado incrível 😍" },
-            { name: "marcia.azevedo", avatar: "assets/comments/avatar-02.jpg", text: "Comecei essa semana também, bora!" },
-            { name: "paty.almeida", avatar: "assets/comments/avatar-03.jpg", text: "Funciona mesmo? Vou pesquisar" }
+            { name: "julia.mendes", avatar: "assets/comments/avatar-01.jpg", text: "Gente que resultado incrível, e olha o brilho no seu olhar 😍" },
+            { name: "marcia.azevedo", avatar: "assets/comments/avatar-02.jpg", text: "Comecei essa semana também, Deus está no controle 🙏" },
+            { name: "paty.almeida", avatar: "assets/comments/avatar-03.jpg", text: "Funciona mesmo? Vou pesquisar sobre a história de Ester" }
         ]
     },
     {
@@ -22,10 +22,10 @@ const REELS_DATA = [
         poster: "assets/stories/perfil2/story1.jpg",
         likes: 2317,
         reposts: 356,
-        caption: "Nunca pensei que sem academia eu conseguiria esse resultado ✅ #metodovalidado",
+        caption: "Nunca pensei que um jejum baseado na Bíblia fosse me trazer esse resultado ✅ #metodovalidado",
         comments: [
-            { name: "rafaela.costa", avatar: "assets/comments/avatar-04.jpg", text: "Chorei aqui, que orgulho 🥹" },
-            { name: "bia.martins", avatar: "assets/comments/avatar-05.jpg", text: "Qual o link pra participar?" }
+            { name: "rafaela.costa", avatar: "assets/comments/avatar-04.jpg", text: "Chorei aqui, minha fé também estava fraca e isso me tocou 🥹" },
+            { name: "bia.martins", avatar: "assets/comments/avatar-05.jpg", text: "Qual o link pra participar do Jejum de Ester?" }
         ]
     },
     {
@@ -36,11 +36,11 @@ const REELS_DATA = [
         poster: "assets/stories/perfil3/story2.jpg",
         likes: 986,
         reposts: 98,
-        caption: "Antes e depois de 3 semanas 🍏 sem passar fome, sem remédio",
+        caption: "Antes e depois de 3 semanas 🍏 sem passar fome e mais perto de Deus do que nunca",
         comments: [
-            { name: "ana.carvalho", avatar: "assets/comments/avatar-06.jpg", text: "Arrasou demais 👏👏" },
-            { name: "julia.mendes", avatar: "assets/comments/avatar-01.jpg", text: "Salvei o vídeo pra me inspirar" },
-            { name: "camila.rodrigues", avatar: "assets/comments/avatar-07.jpg", text: "Bem-vinda ao clube 💜" }
+            { name: "ana.carvalho", avatar: "assets/comments/avatar-06.jpg", text: "Arrasou demais, corpo e espírito renovados 👏👏" },
+            { name: "julia.mendes", avatar: "assets/comments/avatar-01.jpg", text: "Salvei o vídeo pra me inspirar nos devocionais" },
+            { name: "camila.rodrigues", avatar: "assets/comments/avatar-07.jpg", text: "Bem-vinda ao clube, aqui a gente emagrece rezando 💜" }
         ]
     },
     {
@@ -51,10 +51,10 @@ const REELS_DATA = [
         poster: "assets/stories/perfil1/story1.jpg",
         likes: 3021,
         reposts: 487,
-        caption: "-12cm de cintura sem academia obrigatória, olha essa diferença 🤯",
+        caption: "-10cm de cintura e recuperei minha fé no processo, olha essa diferença 🤯🙏",
         comments: [
-            { name: "paty.almeida", avatar: "assets/comments/avatar-03.jpg", text: "Isso é resultado de verdade" },
-            { name: "bia.martins", avatar: "assets/comments/avatar-05.jpg", text: "Onde eu compro?" }
+            { name: "paty.almeida", avatar: "assets/comments/avatar-03.jpg", text: "Isso é resultado de verdade, com propósito" },
+            { name: "bia.martins", avatar: "assets/comments/avatar-05.jpg", text: "Onde eu compro o Jejum de Ester?" }
         ]
     },
     {
@@ -65,10 +65,10 @@ const REELS_DATA = [
         poster: "assets/stories/perfil2/story1.jpg",
         likes: 1274,
         reposts: 143,
-        caption: "21 dias depois... nem eu acreditei no espelho 😭💕 #desafio21dias",
+        caption: "21 dias depois... nem eu acreditei no espelho, e minha relação com Deus nunca esteve tão forte 😭💕 #jejumdeester",
         comments: [
-            { name: "ana.carvalho", avatar: "assets/comments/avatar-06.jpg", text: "Que evolução linda 😍" },
-            { name: "fernanda.lima", avatar: "assets/comments/avatar-08.jpg", text: "Me inspirou muito, obrigada por compartilhar" }
+            { name: "ana.carvalho", avatar: "assets/comments/avatar-06.jpg", text: "Que evolução linda, corpo e alma 😍" },
+            { name: "fernanda.lima", avatar: "assets/comments/avatar-08.jpg", text: "Me inspirou muito, obrigada por compartilhar sua fé" }
         ]
     },
     {
@@ -79,11 +79,11 @@ const REELS_DATA = [
         poster: "assets/stories/perfil3/story2.jpg",
         likes: 2689,
         reposts: 301,
-        caption: "Sem efeito sanfona dessa vez, finalmente encontrei o método certo ✅",
+        caption: "Sem efeito sanfona dessa vez, porque dessa vez eu entreguei o processo a Deus ✅🙏",
         comments: [
-            { name: "camila.rodrigues", avatar: "assets/comments/avatar-07.jpg", text: "Isso sim é resultado consistente 👏" },
-            { name: "julia.mendes", avatar: "assets/comments/avatar-01.jpg", text: "Já são quantos dias?" },
-            { name: "paty.almeida", avatar: "assets/comments/avatar-03.jpg", text: "Vou começar hoje mesmo" }
+            { name: "camila.rodrigues", avatar: "assets/comments/avatar-07.jpg", text: "Isso sim é resultado consistente, glória a Deus 👏" },
+            { name: "julia.mendes", avatar: "assets/comments/avatar-01.jpg", text: "Já são quantos dias de jejum?" },
+            { name: "paty.almeida", avatar: "assets/comments/avatar-03.jpg", text: "Vou começar hoje mesmo, com fé" }
         ]
     },
     {
@@ -94,9 +94,9 @@ const REELS_DATA = [
         poster: "assets/stories/perfil1/story1.jpg",
         likes: 954,
         reposts: 76,
-        caption: "Plano alimentar prático mesmo com rotina corrida, recomendo demais 🥗",
+        caption: "Plano alimentar prático e devocional todo dia, recomendo demais pra quem quer emagrecer com propósito 🥗📖",
         comments: [
-            { name: "marcia.santos", avatar: "assets/comments/avatar-09.jpg", text: "Adorei a dica das receitas rápidas" },
+            { name: "marcia.santos", avatar: "assets/comments/avatar-09.jpg", text: "Adorei a dica dos devocionais junto com as receitas" },
             { name: "rafaela.costa", avatar: "assets/comments/avatar-04.jpg", text: "Preciso disso na minha vida 🙏" }
         ]
     },
@@ -108,10 +108,10 @@ const REELS_DATA = [
         poster: "assets/stories/perfil2/story1.jpg",
         likes: 3452,
         reposts: 512,
-        caption: "Redução de medidas real, sem remédio e com suporte diário 🔥",
+        caption: "Redução de medidas real, sem remédio, e minha ansiedade sumiu depois que voltei a orar todo dia 🔥🙏",
         comments: [
-            { name: "juliana.ferreira", avatar: "assets/comments/avatar-10.jpg", text: "Simplesmente incrível, parabéns 👏" },
-            { name: "renata.souza", avatar: "assets/comments/avatar-11.jpg", text: "Bora começar juntas!" }
+            { name: "juliana.ferreira", avatar: "assets/comments/avatar-10.jpg", text: "Simplesmente incrível, Deus é bom o tempo todo 👏" },
+            { name: "renata.souza", avatar: "assets/comments/avatar-11.jpg", text: "Bora começar juntas essa jornada de fé!" }
         ]
     }
 ];
