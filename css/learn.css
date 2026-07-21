@@ -1,0 +1,88 @@
+/* ===================================================
+   O QUE VOCÊ VAI APRENDER
+=================================================== */
+
+.learn-section{
+    padding:34px 20px;
+    text-align:center;
+}
+
+.learn-title{
+    max-width:340px;
+    margin:0 auto 26px;
+    font-family:"Playfair Display",Georgia,serif;
+    font-weight:700;
+    font-size:26px;
+    line-height:1.28;
+    color:#2b2117;
+}
+
+.learn-title span{
+    display:block;
+    margin-top:4px;
+    font-style:italic;
+    background:linear-gradient(90deg,#ff7f50,#ff5fa2,#8b5cf6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.learn-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    text-align:left;
+    max-width:400px;
+    margin:0 auto;
+}
+
+.learn-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    background:#fff;
+    border:1px solid #f7dce8;
+    border-radius:16px;
+    padding:16px;
+    box-shadow:0 8px 20px rgba(196,30,94,.07);
+}
+
+.learn-icon{
+    flex:0 0 auto;
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#fdeaf1;
+    font-size:17px;
+}
+
+.learn-item h3{
+    font-family:"Playfair Display",Georgia,serif;
+    font-weight:700;
+    font-size:16.5px;
+    color:#2b2117;
+    margin-bottom:6px;
+}
+
+.learn-item p{
+    font-size:13px;
+    line-height:1.5;
+    color:#5a4f3f;
+}
+
+
+/* ===================================================
+   O QUE VOCÊ VAI APRENDER - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .learn-title{
+        max-width:420px;
+        font-size:30px;
+    }
+
+}
