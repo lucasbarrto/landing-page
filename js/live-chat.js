@@ -23,7 +23,6 @@ class LiveChat {
         this.bindOpenClose();
         this.bindLoadMore();
         this.bindForm();
-        this.scheduleFirstBadge();
         this.scheduleIncoming();
 
     }
@@ -224,25 +223,11 @@ class LiveChat {
 
     }
 
-    scheduleFirstBadge() {
-
-        setTimeout(() => {
-
-            if (!this.isOpen) {
-
-                this.incrementUnread(true);
-
-            }
-
-        }, 9000);
-
-    }
-
-    scheduleIncoming() {
+    scheduleIncoming(isFirst = true) {
 
         if (this.incoming.length === 0) return;
 
-        const delay = 18000 + Math.random() * 22000;
+        const delay = isFirst ? 20000 : 40000 + Math.random() * 60000;
 
         setTimeout(() => {
 
@@ -265,7 +250,7 @@ class LiveChat {
 
             }
 
-            this.scheduleIncoming();
+            this.scheduleIncoming(false);
 
         }, delay);
 
