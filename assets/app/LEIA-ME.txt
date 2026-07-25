@@ -1,0 +1,12 @@
+Coloque aqui as 4 imagens (mockups do app em celular) da seção "Mais Que Uma Dieta", com estes nomes exatos:
+
+nunca-trava.png       -> aba "Nunca Trava" (mapa da jornada, dia 9 de 21, trilha com estrelas e bônus no dia 15)
+cuidado-diario.png    -> aba "Cuidado Diário" (devocional do dia + plano alimentar com refeições marcadas)
+sua-evolucao.png      -> aba "Sua Evolução" (tela de conquista dos 21 dias, medalhas e calendário completo)
+nunca-so.png          -> aba "Nunca Só" (mural da comunidade com posts e ranking)
+
+Formato: os mockups fotográficos de celular (retrato, proporção ~2:3, tipo 1024x1536px) encaixam bem
+na moldura da seção. A imagem é cortada com object-fit:cover pra caber, então enquadre o celular
+centralizado na foto.
+
+Enquanto o arquivo não existir, a aba mostra um ícone com "Prévia em breve" no lugar da imagem.

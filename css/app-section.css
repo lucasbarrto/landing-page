@@ -1,0 +1,258 @@
+/* ===================================================
+   APP DO JEJUM DE ESTER
+=================================================== */
+
+.app-section{
+    padding:34px 20px 30px;
+    text-align:center;
+    background:#fff;
+}
+
+.app-eyebrow{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+    color:#7c3aed;
+}
+
+.app-title{
+    margin:10px auto 28px;
+    max-width:360px;
+    font-family:"Playfair Display",Georgia,serif;
+    font-weight:700;
+    font-size:24px;
+    line-height:1.28;
+    color:#161616;
+}
+
+.app-title span{
+    display:block;
+    margin-top:4px;
+    font-style:italic;
+    background:linear-gradient(90deg,#ff7f50,#ff5fa2,#8b5cf6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.app-showcase{
+    max-width:400px;
+    margin:0 auto;
+}
+
+.app-tabs{
+    display:flex;
+    gap:6px;
+    margin-bottom:20px;
+}
+
+.app-tab{
+    flex:1;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    background:#fdeaf1;
+    color:#a3728a;
+    font-size:9px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.2px;
+    text-align:center;
+    padding:8px 4px 10px;
+    border-radius:16px;
+    cursor:pointer;
+    transition:background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.app-tab:hover{
+    transform:translateY(-1px);
+}
+
+.app-tab-thumb{
+    width:34px;
+    height:34px;
+    border-radius:10px;
+    overflow:hidden;
+    border:2px solid #fff;
+    box-shadow:0 2px 6px rgba(139,92,246,.25);
+    transition:border-color .2s ease, transform .2s ease;
+}
+
+.app-tab-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.app-tab.active .app-tab-thumb{
+    border-color:#8b5cf6;
+    transform:scale(1.08);
+}
+
+.app-tab.active{
+    background:linear-gradient(135deg,#ff5fa2,#8b5cf6);
+    color:#fff;
+    box-shadow:0 8px 18px rgba(139,92,246,.3);
+}
+
+.app-panel{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+}
+
+.app-panel.active{
+    display:flex;
+    animation:appPanelFade .3s ease;
+}
+
+@keyframes appPanelFade{
+    from{
+        opacity:0;
+        transform:translateY(6px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.app-frame{
+    position:relative;
+    width:290px;
+    aspect-ratio:2/3;
+    border-radius:20px;
+    overflow:hidden;
+    background:linear-gradient(150deg,#fdeaf1,#f7dce8);
+    border:1px solid #f2d8e6;
+    box-shadow:0 16px 34px rgba(139,92,246,.18);
+}
+
+.app-frame-img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+.app-frame-placeholder{
+    position:absolute;
+    inset:0;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    color:#a3728a;
+    font-size:11px;
+    font-weight:600;
+    text-align:center;
+    padding:0 16px;
+}
+
+.app-frame-placeholder span{
+    font-size:30px;
+}
+
+.app-frame-empty .app-frame-img{
+    display:none;
+}
+
+.app-frame-empty .app-frame-placeholder{
+    display:flex;
+}
+
+.app-panel h3{
+    max-width:340px;
+    font-family:"Playfair Display",Georgia,serif;
+    font-weight:700;
+    font-size:16px;
+    line-height:1.35;
+    color:#2b2117;
+}
+
+.app-panel p{
+    max-width:340px;
+    font-size:13px;
+    line-height:1.5;
+    color:#5a4f3f;
+}
+
+.app-callout{
+    max-width:400px;
+    margin:22px auto 0;
+    background:#fdf2f6;
+    border:1px solid #f2d8e6;
+    border-radius:16px;
+    padding:16px 18px;
+    font-size:13.5px;
+    line-height:1.5;
+    color:#3a3440;
+    box-shadow:0 8px 20px rgba(196,30,94,.08);
+}
+
+.app-callout strong{
+    color:#c41e5e;
+}
+
+.app-cta{
+    display:block;
+    max-width:340px;
+    margin:20px auto 0;
+    background:linear-gradient(135deg,#ff5fa2,#8b5cf6);
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.2px;
+    padding:14px 18px;
+    border-radius:999px;
+    box-shadow:0 10px 24px rgba(139,92,246,.3);
+    transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.app-cta:hover{
+    transform:translateY(-2px);
+}
+
+.app-cta:active{
+    transform:translateY(0);
+}
+
+
+/* ===================================================
+   APP DO JEJUM DE ESTER - RESPONSIVO
+=================================================== */
+
+@media(min-width:768px){
+
+    .app-title{
+        max-width:440px;
+        font-size:28px;
+    }
+
+    .app-tab{
+        font-size:10.5px;
+        padding:10px 6px 12px;
+    }
+
+    .app-tab-thumb{
+        width:40px;
+        height:40px;
+    }
+
+    .app-frame{
+        width:320px;
+    }
+
+    .app-panel h3{
+        font-size:18px;
+    }
+
+}
