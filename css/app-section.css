@@ -99,11 +99,90 @@
     box-shadow:0 8px 18px rgba(139,92,246,.3);
 }
 
+.app-swipe-hint{
+    margin:0 0 16px;
+    font-size:12.5px;
+    font-weight:600;
+    color:#a3728a;
+    animation:appHintPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes appHintPulse{
+    0%,100%{ opacity:.65; }
+    50%{ opacity:1; }
+}
+
+.app-stage{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.app-nav-arrow{
+    position:absolute;
+    top:50%;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    border:none;
+    background:rgba(255,255,255,.92);
+    color:#8b5cf6;
+    font-size:20px;
+    line-height:1;
+    cursor:pointer;
+    box-shadow:0 6px 16px rgba(139,92,246,.28);
+    transform:translateY(-50%);
+    transition:transform .15s ease, background .15s ease;
+}
+
+.app-nav-arrow:hover{
+    background:#fff;
+    transform:translateY(-50%) scale(1.08);
+}
+
+.app-nav-arrow:active{
+    transform:translateY(-50%) scale(.96);
+}
+
+.app-nav-prev{ left:-4px; }
+.app-nav-next{ right:-4px; }
+
+.app-dots{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-top:16px;
+}
+
+.app-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    border:none;
+    padding:0;
+    background:#f2d8e6;
+    cursor:pointer;
+    transition:background .2s ease, transform .2s ease, width .2s ease;
+}
+
+.app-dot.active{
+    width:20px;
+    border-radius:4px;
+    background:linear-gradient(90deg,#ff5fa2,#8b5cf6);
+}
+
 .app-panel{
     display:none;
     flex-direction:column;
     align-items:center;
     gap:14px;
+    width:100%;
 }
 
 .app-panel.active{
@@ -131,6 +210,16 @@
     background:linear-gradient(150deg,#fdeaf1,#f7dce8);
     border:1px solid #f2d8e6;
     box-shadow:0 16px 34px rgba(139,92,246,.18);
+}
+
+.app-frame-nudge{
+    animation:appFrameNudge 1s ease .4s 1;
+}
+
+@keyframes appFrameNudge{
+    0%,100%{ transform:translateX(0); }
+    25%{ transform:translateX(-10px); }
+    60%{ transform:translateX(6px); }
 }
 
 .app-frame-img{
