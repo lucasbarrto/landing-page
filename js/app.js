@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
        até ele.
     ========================================== */
 
-    const CHECKOUT_URL = "https://pay.kiwify.com.br/IgzadMh";
+    const CHECKOUT_URL = "https://pay.kiwify.com.br/rVMXEok";
 
     const pricingCta = document.getElementById("pricingCta");
 
