@@ -25,6 +25,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    /* ==========================================
+       BOTÃO DO HERO
+       Antes de ir direto pro checkout, leva o
+       cliente para conhecer o app na seção seguinte.
+    ========================================== */
+
+    const appSection = document.getElementById("appSection");
+
+    document.querySelectorAll(".js-scroll-to-app").forEach((link) => {
+
+        link.addEventListener("click", (event) => {
+
+            event.preventDefault();
+
+            appSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        });
+
+    });
+
     new Stories(STORIES_DATA);
 
     new Reels(REELS_DATA);

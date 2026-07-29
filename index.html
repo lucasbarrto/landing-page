@@ -139,7 +139,7 @@
         </p>
 
 
-        <a class="hero-cta js-scroll-to-checkout" href="#pricingCta">
+        <a class="hero-cta js-scroll-to-app" href="#appSection">
 
             Quero Começar Meu Jejum de Ester
 
@@ -189,7 +189,7 @@
 
     <!-- APP DO JEJUM DE ESTER -->
 
-    <section class="app-section">
+    <section class="app-section" id="appSection">
 
         <div class="app-eyebrow">● Mais Que Uma Dieta</div>
 
@@ -686,90 +686,97 @@
 
                 <div class="pricing-divider"></div>
 
-                <div class="pricing-included-label">O que está incluso</div>
+                <div class="pricing-tabs" role="tablist">
+                    <button class="pricing-tab active" data-tab="incluso" type="button">✅ O que está incluso</button>
+                    <button class="pricing-tab pricing-tab-highlight" data-tab="bonus" type="button">🎁 Bônus grátis <span class="pricing-tab-badge">4</span></button>
+                </div>
 
-                <ul class="pricing-checklist">
+                <div class="pricing-panel active" data-panel="incluso">
 
-                    <li>
-                        <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span><strong>Plano alimentar inspirado no jejum de Ester</strong> de 21 dias</span>
-                    </li>
+                    <ul class="pricing-checklist">
 
-                    <li>
-                        <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span>Elimine <strong>até 9kg</strong> em 21 dias</span>
-                    </li>
+                        <li>
+                            <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span><strong>Plano alimentar inspirado no jejum de Ester</strong> de 21 dias</span>
+                        </li>
 
-                    <li>
-                        <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span><strong>Devocionais diários</strong> para fortalecer sua fé</span>
-                    </li>
+                        <li>
+                            <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Elimine <strong>até 9kg</strong> em 21 dias</span>
+                        </li>
 
-                    <li>
-                        <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span><strong>Reduza medidas</strong> e afine a barriga</span>
-                    </li>
+                        <li>
+                            <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span><strong>Devocionais diários</strong> para fortalecer sua fé</span>
+                        </li>
 
-                    <li>
-                        <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span><strong>Suporte diário</strong> e acompanhamento próximo</span>
-                    </li>
+                        <li>
+                            <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span><strong>Reduza medidas</strong> e afine a barriga</span>
+                        </li>
 
-                    <li>
-                        <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span>Sistema de <strong>18 passos contra o efeito sanfona</strong></span>
-                    </li>
+                        <li>
+                            <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span><strong>Suporte diário</strong> e acompanhamento próximo</span>
+                        </li>
 
-                </ul>
+                        <li>
+                            <svg class="pricing-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Sistema de <strong>18 passos contra o efeito sanfona</strong></span>
+                        </li>
 
-                <div class="pricing-divider pricing-divider-dashed"></div>
+                    </ul>
 
-                <div class="pricing-bonus-label">🎁 Bônus por tempo limitado</div>
+                </div>
 
-                <div class="pricing-bonus-list">
+                <div class="pricing-panel" data-panel="bonus">
 
-                    <div class="pricing-bonus-card">
-                        <span class="pricing-bonus-tag">Bônus 01</span>
-                        <div class="pricing-bonus-row">
-                            <span class="pricing-bonus-icon">📋</span>
-                            <div>
-                                <strong>Cardápio de Ester (Plano Turbo de 7 dias)</strong>
-                                <p>Cardápio prático pra emagrecer com disciplina e fé</p>
+                    <div class="pricing-bonus-list">
+
+                        <div class="pricing-bonus-card">
+                            <span class="pricing-bonus-tag">Bônus 01</span>
+                            <div class="pricing-bonus-row">
+                                <span class="pricing-bonus-icon">📋</span>
+                                <div>
+                                    <strong>Cardápio de Ester (Plano Turbo de 7 dias)</strong>
+                                    <p>Cardápio prático pra emagrecer com disciplina e fé</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pricing-bonus-card">
-                        <span class="pricing-bonus-tag">Bônus 02</span>
-                        <div class="pricing-bonus-row">
-                            <span class="pricing-bonus-icon">📖</span>
-                            <div>
-                                <strong>Guia de Receitas Leves e Abençoadas</strong>
-                                <p>Receitas simples pra manter o corpo transformado e o espírito em paz</p>
+                        <div class="pricing-bonus-card">
+                            <span class="pricing-bonus-tag">Bônus 02</span>
+                            <div class="pricing-bonus-row">
+                                <span class="pricing-bonus-icon">📖</span>
+                                <div>
+                                    <strong>Guia de Receitas Leves e Abençoadas</strong>
+                                    <p>Receitas simples pra manter o corpo transformado e o espírito em paz</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pricing-bonus-card">
-                        <span class="pricing-bonus-tag">Bônus 03</span>
-                        <div class="pricing-bonus-row">
-                            <span class="pricing-bonus-icon">🥤</span>
-                            <div>
-                                <strong>50 Sucos Sagrados Detox</strong>
-                                <p>Sucos naturais pra limpar o corpo e turbinar a queima de gordura</p>
+                        <div class="pricing-bonus-card">
+                            <span class="pricing-bonus-tag">Bônus 03</span>
+                            <div class="pricing-bonus-row">
+                                <span class="pricing-bonus-icon">🥤</span>
+                                <div>
+                                    <strong>50 Sucos Sagrados Detox</strong>
+                                    <p>Sucos naturais pra limpar o corpo e turbinar a queima de gordura</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pricing-bonus-card">
-                        <span class="pricing-bonus-tag">Bônus 04</span>
-                        <div class="pricing-bonus-row">
-                            <span class="pricing-bonus-icon">🧠</span>
-                            <div>
-                                <strong>Manual da Mente Magra com Deus</strong>
-                                <p>Reprograme pensamentos e vença a ansiedade que sabota sua dieta</p>
+                        <div class="pricing-bonus-card">
+                            <span class="pricing-bonus-tag">Bônus 04</span>
+                            <div class="pricing-bonus-row">
+                                <span class="pricing-bonus-icon">🧠</span>
+                                <div>
+                                    <strong>Manual da Mente Magra com Deus</strong>
+                                    <p>Reprograme pensamentos e vença a ansiedade que sabota sua dieta</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -1365,6 +1372,7 @@
 <script src="js/reels.js"></script>
 <script src="js/benefits-tabs.js"></script>
 <script src="js/app-tabs.js"></script>
+<script src="js/pricing-tabs.js"></script>
 <script src="js/strategy-carousel.js"></script>
 <script src="js/faq.js"></script>
 <script src="js/live-chat-data.js"></script>
